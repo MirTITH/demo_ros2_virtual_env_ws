@@ -12,6 +12,6 @@ wheels/
 .venv
 
 # ROS2 generated files
-install/
-log/
-build/
+/install
+/log
+/build
