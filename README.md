@@ -15,11 +15,29 @@ cd demo_ros2_virtual_env_ws
 
 ### 安装 uv：
 
+安装：
+
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 > 更多安装方法：https://docs.astral.sh/uv/getting-started/installation/#standalone-installer
+
+配置终端补全：
+
+对于 bash：
+
+```bash
+echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
+echo 'eval "$(uvx --generate-shell-completion bash)"' >> ~/.bashrc
+```
+
+对于 zsh：
+
+```bash
+echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
+echo 'eval "$(uvx --generate-shell-completion zsh)"' >> ~/.zshrc
+```
 
 ### 给 uv 换源（可选）：
 
